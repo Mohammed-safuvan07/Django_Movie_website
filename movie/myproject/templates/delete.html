@@ -1,0 +1,10 @@
+{% extends 'detail.html' %}
+{% block body %}
+<form method="POST">
+  {% csrf_token %}
+  <h3>Are you sure! you want to delete this data</h3>
+  <input type="submit">
+</form>
+
+
+{% endblock %}
